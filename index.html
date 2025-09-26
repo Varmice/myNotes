@@ -1,0 +1,146 @@
+---
+layout: default
+title: Lucian Yu's Programming Notes
+---
+
+<div class="main-content">
+    <header class="page-header">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">Hi, I'm Lucian Yu - 编程学习笔记</h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+        <h2>📚 笔记分类</h2>
+
+        <div class="categories">
+            <h3>🔥 Java 基础</h3>
+            <ul>
+                <li><a href="java/basic/">Java 基础语法</a></li>
+                <li><a href="java/oop/">面向对象编程</a></li>
+                <li><a href="java/collection/">集合框架</a></li>
+                <li><a href="java/io/">I/O 操作</a></li>
+                <li><a href="java/thread/">多线程编程</a></li>
+            </ul>
+
+            <h3>🗄️ 数据库</h3>
+            <ul>
+                <li><a href="database/mysql/">MySQL 基础</a></li>
+                <li><a href="database/mysql/advanced/">MySQL 进阶</a></li>
+                <li><a href="database/jdbc/">JDBC 操作</a></li>
+                <li><a href="database/mybatis/">MyBatis 框架</a></li>
+            </ul>
+
+            <h3>🌱 Spring 生态</h3>
+            <ul>
+                <li><a href="spring/core/">Spring Core</a></li>
+                <li><a href="spring/aop/">AOP 面向切面编程</a></li>
+                <li><a href="spring/mvc/">Spring MVC</a></li>
+                <li><a href="spring/boot/">Spring Boot</a></li>
+                <li><a href="spring/security/">Spring Security</a></li>
+            </ul>
+
+            <h3>🏗️ SSM 框架</h3>
+            <ul>
+                <li><a href="ssm/integration/">SSM 整合</a></li>
+                <li><a href="ssm/config/">配置文件详解</a></li>
+                <li><a href="ssm/practice/">实战项目</a></li>
+            </ul>
+
+            <h3>⚙️ 设计模式</h3>
+            <ul>
+                <li><a href="design-patterns/proxy/">代理模式</a>
+                    <ul>
+                        <li><a href="design-patterns/proxy/static/">静态代理</a></li>
+                        <li><a href="design-patterns/proxy/dynamic/">动态代理</a></li>
+                        <li><a href="design-patterns/proxy/cglib/">CGLIB 代理</a></li>
+                    </ul>
+                </li>
+                <li><a href="design-patterns/singleton/">单例模式</a></li>
+                <li><a href="design-patterns/factory/">工厂模式</a></li>
+                <li><a href="design-patterns/observer/">观察者模式</a></li>
+            </ul>
+
+            <h3>🛠️ 工具与环境</h3>
+            <ul>
+                <li><a href="tools/git/">Git 版本控制</a></li>
+                <li><a href="tools/maven/">Maven 构建工具</a></li>
+                <li><a href="tools/ide/">IDE 使用技巧</a></li>
+                <li><a href="tools/docker/">Docker 容器化</a></li>
+            </ul>
+        </div>
+
+        <h2>🔍 快速查找</h2>
+        <p>你可以使用浏览器的搜索功能 (Ctrl+F 或 Cmd+F) 来快速查找特定主题。</p>
+
+        <h2>📈 学习路径建议</h2>
+        <ol>
+            <li><strong>Java 基础</strong> → 掌握核心语法和面向对象思想</li>
+            <li><strong>数据库基础</strong> → 学会 MySQL 和 JDBC 操作</li>
+            <li><strong>Web 开发</strong> → 学习 HTML/CSS/JavaScript 基础</li>
+            <li><strong>Spring 框架</strong> → 从 Spring Core 开始，逐步学习 MVC</li>
+            <li><strong>SSM 整合</strong> → 将所学技术整合到项目中</li>
+            <li><strong>Spring Boot</strong> → 学习现代化的开发方式</li>
+            <li><strong>设计模式</strong> → 提升代码设计能力</li>
+        </ol>
+
+        <footer class="site-footer">
+            <span class="site-footer-owner">
+                这个网站是由 <strong>Lucian Yu</strong> 维护的。
+            </span>
+            <span class="site-footer-credits">
+                使用 <a href="https://pages.github.com">GitHub Pages</a> 和
+                <a href="https://github.com/pages-themes/cayman">Cayman 主题</a> 构建。
+            </span>
+        </footer>
+    </main>
+</div>
+
+<style>
+.categories {
+    margin: 20px 0;
+}
+
+.categories h3 {
+    color: #159957;
+    border-bottom: 2px solid #159957;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.categories ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.categories ul ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.categories li {
+    margin: 8px 0;
+    padding: 5px 0;
+}
+
+.categories li a {
+    text-decoration: none;
+    color: #1e6bb8;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.categories li a:hover {
+    background-color: #f0f8ff;
+    text-decoration: underline;
+}
+
+.categories ul ul li a {
+    color: #666;
+    font-size: 0.9em;
+}
+
+ol li {
+    margin: 10px 0;
+}
+</style>
